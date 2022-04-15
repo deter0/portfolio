@@ -1,0 +1,33 @@
+@import "./base.scss";
+
+.balloon {
+	position: fixed;
+	bottom: 14px;
+	right: 14px;
+	width: fit-content;
+	height: fit-content;
+	border-radius: 400px;
+	border: none;
+	padding: 8px;
+	background-color: transparentize($color: $foreground, $amount: 0.3);
+	backdrop-filter: blur(14px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	filter: drop-shadow(2px 2px 4px $background);
+	z-index: 20;
+	cursor: pointer;
+	transition: background 0.2s, transform 0.4s;
+}
+
+.balloon:active {
+	transform: scale(0.2);
+}
+
+.balloon:hover {
+	background-color: transparentize($color: $foreground, $amount: 0.1);
+}
+
+.balloon-inactive {
+	transform: translateX(140%) rotate(-90deg) translateY(20%);
+}

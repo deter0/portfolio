@@ -1,0 +1,27 @@
+$background: #121213;
+$foreground: #ffffff;
+$purple0: #784bec;
+$purple1: #bba5f5;
+$purple2: #cfbff7;
+$red: #e2252e;
+$green: #7db498;
+
+body {
+	background-color: $background;
+	color: $foreground;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+h1 {
+	color: $purple0;
+	font-size: 3.2rem;
+	margin: 0;
+}
+h2 {
+	color: $purple1;
+	font-size: 2.8rem;
+}
+p {
+	font-size: 1.1rem;
+}

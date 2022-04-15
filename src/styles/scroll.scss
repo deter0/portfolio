@@ -1,0 +1,46 @@
+@import "./base.scss";
+
+.scroll-ind-cont {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+@keyframes scroll-button-hover {
+	0% {
+		color: $purple2;
+		box-shadow: 0 0 1px 0 $purple2;
+	}
+	90% {
+		color: $purple1;
+		transform: translateY(-20%);
+		box-shadow: 0 0 4px 0 $purple2;
+	}
+	100% {
+		color: $purple2;
+		box-shadow: 0 0 1px 0 $purple2;
+	}
+}
+
+.scroll-ind-cont button {
+	z-index: 5;
+	color: white;
+	background: transparent;
+	border: none;
+	margin-bottom: 24px;
+	font-size: 40px;
+	height: fit-content;
+	border-radius: 400px;
+	width: fit-content;
+	filter: drop-shadow(0px 0px 14px $background);
+	opacity: 80%;
+	animation-name: scroll-button-hover;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	cursor: pointer;
+}
